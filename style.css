@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#computerChoice, #playerChoice, #endScreen {
+  background-color: #e0ffff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#computerChoice h1, #playerChoice h1, #endScreen h1 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.default, .batu, .gunting, .kertas {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.default {
+  background-image: url('/img/pngtree-question-mark-icon-vector-png-image_6633026.png');
+}
+.batu {
+  background-image: url('/img/batu.png');
+}
+.gunting {
+  background-image: url('/img/gunting.png');
+}
+.kertas {
+  background-image: url('/img/kertas.png');
+}
+
+.default:hover, .batu:hover, .kertas:hover, .gunting:hover {
+  transform: scale(1.05);
+}
+
+button {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:active {
+  background-color: #dcdcdc;
+  transform: scale(0.95);
+}
+
+.b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#endScreen {
+  width: 200px;
+  height: 80px;
+  font-size: 1.2rem;
+  color: #222;
+  justify-content: center;
+}
