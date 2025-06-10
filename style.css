@@ -42,16 +42,16 @@ body {
 }
 
 .default {
-  background-image: url('./img/pngtree-question-mark-icon-vector-png-image_6633026.png');
+  background-image: url('../img/pngtree-question-mark-icon-vector-png-image_6633026.png');
 }
 .batu {
-  background-image: url('./img/batu.png');
+  background-image: url('../img/batu.png');
 }
 .gunting {
-  background-image: url('./img/gunting.png');
+  background-image: url('../img/gunting.png');
 }
 .kertas {
-  background-image: url('./img/kertas.png');
+  background-image: url('../img/kertas.png');
 }
 
 .default:hover, .batu:hover, .kertas:hover, .gunting:hover {
