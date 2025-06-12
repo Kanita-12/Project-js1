@@ -8,6 +8,16 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+#kejutan {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 9999;
+  display: none;
+}
 
 #computerChoice, #playerChoice, #endScreen {
   background-color: #e0ffff;
@@ -21,6 +31,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#healthBar{
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+}
+#playerHealth{
+   font-size: x-large;
 }
 
 #computerChoice h1, #playerChoice h1, #endScreen h1 {
@@ -42,16 +62,16 @@ body {
 }
 
 .default {
-  background-image: url('./img/pngtree-question-mark-icon-vector-png-image_6633026.png');
+  background-image: url('/img/pngtree-question-mark-icon-vector-png-image_6633026.png');
 }
 .batu {
-  background-image: url('./img/batu.png');
+  background-image: url('/img/batu.png');
 }
 .gunting {
-  background-image: url('./img/gunting.png');
+  background-image: url('/img/gunting.png');
 }
 .kertas {
-  background-image: url('./img/kertas.png');
+  background-image: url('/img/kertas.png');
 }
 
 .default:hover, .batu:hover, .kertas:hover, .gunting:hover {
